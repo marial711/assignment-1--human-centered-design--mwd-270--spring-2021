@@ -6,23 +6,32 @@
   </head>
   <body>
     <form class="" action="index.html" method="post">
-      <label for="fname">Enter Name: </label>
-      <input type="text" id="fname" name="fname">
-      <br>
-      <br>
-      <label for="lname">Enter Last Name: </label>
-      <input type="text" id="lname" name="lname">
-      <br>
-      <br>
-      <label for="phone-number">Enter your phone number: </label>
-      <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-      <small>Format: 111-222-3344 </small>
-      <br>
-      <br>
-      <label for="starting-date">Starting Date: </label>
-      <input type="date" id="date" name="starting-date">
-      <br>
-      <br>
+      <div id="name">
+        <label for="fname">Enter Name: </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <br>
+        <label for="lname">Enter Last Name: </label>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <br>
+      </div>
+
+      <div id="contact-number">
+        <label for="phone-number">Enter your phone number: </label>
+        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        <small>Format: 111-222-3344 </small>
+        <br>
+        <br>
+      </div>
+
+      <div id="availability">
+        <label for="starting-date">Starting Date: </label>
+        <input type="date" id="date" name="starting-date">
+        <br>
+        <br>
+      </div>
+
       <div id="relocation">
         <p>Are you willing to relocate? Choose an option below</p>
         <input type="radio" id="international" name="location" value="international">
@@ -34,6 +43,7 @@
       </div>
       <br>
       <br>
+
       <input type="submit" name="submit">
       <input type="reset" name="reset">
     </form>
