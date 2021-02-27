@@ -1,5 +1,6 @@
 :root {
-  background-color: white;
+  background: rgb(246,196,218);
+  background: radial-gradient(circle, rgba(246,196,218,1) 0%, rgba(233,212,148,1) 100%);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   margin-right: 45px;
@@ -10,9 +11,16 @@ select {
   padding: 5px;
 }
 div{
-  padding: 20px;
+  padding: 9rem;
+  display: flex;
+  justify-content: center;
 }
 input{
   margin-left: 20px;
   padding: 5px;
+}
+
+#relocation {
+  align-items: center;
+  flex-direction: row;
 }
