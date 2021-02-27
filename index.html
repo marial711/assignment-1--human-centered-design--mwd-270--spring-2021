@@ -4,18 +4,13 @@
     <meta charset="utf-8">
     <title>Assingment #1: Form Project</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <body>
-    <form action="index.html" method="post">
+    <form action="index.html" method="post" class="in-form">
       <div id="name">
-        <label for="fname">Enter Name: </label>
+        <label for="fname">Name: </label>
         <input type="text" id="fname" name="fname">
-        <br>
-        <br>
-        <label for="lname">Enter Last Name: </label>
         <input type="text" id="lname" name="lname">
-        <br>
-        <br>
       </div>
 
       <div id="location">
@@ -76,45 +71,38 @@
           <option value="WY">WY</option>
         </select>
         <input type="number" name="zipcode" placeholder="zipcode" required>
-        <br>
-        <br>
+
       </div>
 
       <div id="salary">
 
-        <br>
-        <br>
       </div>
 
       <div id="contact-number">
         <label for="phone-number">Enter your phone number: </label>
         <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-        <small>Format: 111-222-3344 </small>
-        <br>
-        <br>
+        <!-- <small>Format: 111-222-3344 </small>  -->
       </div>
 
       <div id="availability">
-        <label for="starting-date">Starting Date: </label>
+        <label for="starting-date">Starting Date:  </label>
         <input type="date" id="starting-date" name="starting-date">
-        <br>
-        <br>
       </div>
 
       <div id="relocation">
-        <p>Are you willing to relocate? Choose an option below</p>
+        <p>Are you willing to relocate?</p>
         <input type="radio" id="international" name="location" value="international">
         <label for="international">International</label><br>
         <input type="radio" id="national" name="location" value="national">
         <label for="national">National</label><br>
         <input type="radio" id="both" name="location" value="both" checked>
         <label for="both">Both</label>
-        <br>
-        <br>
       </div>
 
-      <input type="submit" name="submit">
-      <input type="reset" name="reset">
+      <div id="finalize">
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+      </div>
     </form>
 
   </body>
