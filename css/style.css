@@ -36,6 +36,7 @@ span {
   font-size: .75rem;
   color: grey;
 }
+ 
 #relocation {
   align-items: center;
   flex-direction: row;
