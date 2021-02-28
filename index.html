@@ -5,16 +5,29 @@
     <title>Assingment #1: Form Project</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <h1>Welcome!</h1>
+    <small>Navigate your way through this form using your TAB key. Enjoy!</small>
+  </header>
   <body>
     <form action="index.html" method="post">
+
       <div id="name">
-        <label for="fname">Name: </label>
-        <input type="text" id="fname" name="fname">
-        <input type="text" id="lname" name="lname">
+        <label class="headings" for="fname">Name </label>
+        <div class="example">
+          <input type="text" id="fname" name="fname" required>
+          <span>First Name</span>
+        </div>
+        <div class="example">
+          <input type="text" id="lname" name="lname" required>
+          <span>Last Name</span>
+        </div>
       </div>
 
       <div id="location">
-        <label for="address">Enter Address: </label>
+        <label class="headings" for="address">Enter Address </label>
         <input type="text" id="address" name="address" placeholder="ex: 10 Hillside Street" required>
         <input type="text" name="apt" placeholder="Apt/Unit">
         <input type="text" name="city" placeholder="City" required>
@@ -75,28 +88,33 @@
       </div>
 
       <div id="salary">
-
+        <label class="headings" for="">Desired Salary</label>
+        <input type="text" name="" value="">
       </div>
 
       <div id="contact-number">
-        <label for="phone-number">Enter your phone number: </label>
-        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-        <!-- <small>Format: 111-222-3344 </small>  -->
+        <label class="headings" for="phone-number">Enter your phone number</label>
+        <div class="example">
+          <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <span>Format: 111-222-3344</span>
+        </div>
       </div>
 
       <div id="availability">
-        <label for="starting-date">Starting Date:  </label>
-        <input type="date" id="starting-date" name="starting-date">
+        <label class="headings" for="starting-date">Starting Date:  </label>
+        <input type="date" id="starting-date" name="starting-date" required>
       </div>
 
       <div id="relocation">
-        <p>Are you willing to relocate?</p>
-        <input type="radio" id="international" name="location" value="international">
+        <p class="headings">Are you willing to relocate?</p>
+        <input type="radio" id="international" name="location" class ="hover" required>
         <label for="international">International</label>
-        <input type="radio" id="national" name="location" value="national">
+        <input type="radio" id="national" name="location" value="national" required>
         <label for="national">National</label>
-        <input type="radio" id="both" name="location" value="both" checked>
+        <input type="radio" id="both" name="location" value="both"require>
         <label for="both">Both</label>
+        <input type="radio" id="niether" name="location" value="Neither" require>
+        <label for="neither">Neither</label>
       </div>
 
       <div id="finalize">

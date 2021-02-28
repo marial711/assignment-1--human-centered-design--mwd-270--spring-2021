@@ -3,24 +3,61 @@
   background: radial-gradient(circle, rgba(246,196,218,1) 0%, rgba(233,212,148,1) 100%);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  margin-right: 45px;
-  margin-left: 45px;
+  scroll-behavior: smooth;
+}
+header {
+  padding: 5rem;
+}
+h1 {
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+form{
+  background-color: rgba(255,255,255, .35);
 }
 select {
   margin-left: 20px;
-  padding: 5px;
+  padding: 20px;
 }
 div{
-  padding: 9rem;
+  padding: 2rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 input{
   margin-left: 20px;
-  padding: 5px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+span {
+  font-size: .75rem;
+  color: grey;
+}
 #relocation {
   align-items: center;
   flex-direction: row;
+  color: white;
+}
+label:hover{
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#finalize {
+  justify-content: center;
+}
+.headings{
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  text-shadow: 2px 2px darkgrey;
+  font-size: 1rem;
+}
+
+.example{
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
