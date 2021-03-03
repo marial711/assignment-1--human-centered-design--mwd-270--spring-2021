@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Centered Design Assignment 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Registration</h1>
+  </header>
+  <main>
+    <form>
+      <p>Enter your first name <input
+        autofocus
+        type="text"
+        name="firstName"
+        pattern="[A-Za-z]{1,}">
+      </p>
+      <p>Enter your first name <input
+        type="text"
+        name="lastName"
+        pattern="[A-Za-z]{1,}"></p>
+        <p>Enter your street address (formatted as 123 Main Street) <input
+        type="text"
+        name="street-address"
+        pattern="\[0-9]{1,}\[ ]{1}[A-Za-z]{1,}[ ]{1}[A-Za-z]{1,}"></p>
+        <p>Enter your city (Boston) <input
+        type="text"
+        name="city"
+        pattern="[A-Za-z]{1,}"></p>
+      <p>Enter your phone number (formatted as xxx-xxx‒xxxx) <input
+        type="tel"
+        name="phone-number"
+        maxlength="14"
+        pattern="\[0-9]{3}\[-][0-9]{3}-[0-9]{4}"></p>
+      <input type="submit" value="Submit">
+      <input type="reset" name="Reset">
+    </form>
+  </main>
+</body>
+</html>
