@@ -20,25 +20,39 @@
         autofocus
         type="text"
         name="firstName"
-        pattern="[A-Za-z]{1,}">
+        id='firstName'
+        pattern="[A-Za-z]{1,}"
+        data-output="firstNameAnswer">
       </p>
-      <p>Enter your first name <input 
+      <p>Enter your last name <input 
         required
         type="text"
         name="lastName"
-        pattern="[A-Za-z]{1,}"></p>
+        id='lastName'
+        pattern="[A-Za-z]{1,}"
+        data-output="lastNameAnswer"></p>
       <p>Enter your street address (formatted as 123 Main Street) <input
         required
         type="text"
-        name="street-address"
-        pattern="[0-9]{1,}[ ]{1}[A-Za-z-]{1,}[ ]{1}[A-Za-z]{1,}"></p>
+        name="streetAddress"
+        id="street"
+        pattern="[0-9]{1,}[ ]{1}[A-Za-z-]{1,}[ ]{1}[A-Za-z]{1,}"
+        data-output="streetAnswer">
+      </p>
       <p>Enter your city (Boston) <input
         required
         type="text"
         name="city"
-        pattern="[A-Za-z]{1,}[ ]{0,1}[A-Za-z]{1,}"></p>
+        id="city"
+        pattern="[A-Za-z]{1,}[ ]{0,1}[A-Za-z]{1,}"
+        data-output="cityAnswer"></p>
       <p>Select your state 
-        <input required list="states" name="state" id="state">
+        <input 
+        required 
+        list="states" 
+        name="state" 
+        id="state"
+        data-output="stateAnswer">
             <datalist id="states">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -97,32 +111,60 @@
           required
           type="text"
           name="zipcode"
-          pattern="[0-9]{5}"></p>
+          id="zip"
+          pattern="[0-9]{5}"
+          data-output="zipAnswer"></p>
       <p>Desired yearly salary $<input
           required
           type="text"
           name="salary"
-          pattern="[0-9]{2,3}[,][0-9]{3}"></p>
+          id="salary"
+          pattern="[0-9]{2,3}[,][0-9]{3}"
+          data-output="salaryAnswer"></p>
       <p>Enter your phone number (formatted as xxx-xxx‒xxxx) <input
          required
-          type="tel"
+         type="tel"
          name="phone-number"
+         id="number"
          maxlength="14"
-         pattern="\[0-9]{3}\[-][0-9]{3}[-][0-9]{4}"></p>
+         pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+         data-output="phoneAnswer"></p>
       <p>Available date <input
-          required
-          type="date"
-        name="date"></p>
+         required
+         type="date"
+         id="date"
+         name="date"
+         data-output="dateAnswer"></p>
       <p>Willing to relocate? <p>
-        <label><input type="radio" name="relocate" value="yes">Both nationally and internationally</label></p>
-        <p><label><input type="radio" name="relocate" value="nationally">Just nationally</label></p>
-        <p><label><input type="radio" name="relocate" value="internationally">Just internationally</label></p>
-        <p><label><input type="radio" name="relocate" value="no">No</label></p>
+        <label><input type="radio" name="relocate" value="yes" onclick="radioInput()">Both nationally and internationally</label></p>
+        <p><label><input type="radio" name="relocate" value="nationally" data-output="relocateAnswer" onclick="radioInput()">Just nationally</label></p>
+        <p><label><input type="radio" name="relocate" value="internationally" data-output="relocateAnswer" onclick="radioInput()">Just internationally</label></p>
+        <p><label><input type="radio" name="relocate" value="no" data-output="relocateAnswer" onclick="radioInput()">No</label></p>
       </p>
       <input type="submit" value="Submit">
       <input type="reset" name="Reset">
     </form>
+    </div>
+    <div>
+    <form>
+      <p>First Name <input type="text" name="userFirstName" id="firstNameAnswer" disabled="disabled"></p>
+      </p>
+      <p>Last Name <input type="text" name="userLastName" id="lastNameAnswer" disabled="disabled"></p>
+      <p>Street Address <input type="text" name="userStreet" id="streetAnswer" disabled="disabled"></p>
+      <p>City <input type="text" name="userCity" id="cityAnswer" disabled="disabled"></p>
+      <p>State 
+        <input type="text" name="userState" id="stateAnswer" disabled="disabled">
+          </p>
+      <p>Zipcode <input type="text" name="userZip" id="zipAnswer" disabled="disabled"></p>
+      <p>Desired yearly salary $<input type="text" name="userSalary" id="salaryAnswer" disabled="disabled"></p>
+      <p>Phone Number <input type="text" name="userNumber" id="phoneAnswer" disabled="disabled"></p>
+      <p>Available Date <input type="text" name="userDate" id="dateAnswer" disabled="disabled">
+       </p>
+      <p>Willing to relocate? 
+        <input type="text" name="userLocation" id="relocateAnswer" disabled="disabled"></p>
+    </form>
   </div>
   </main>
+  <script src="report.js"></script>
 </body>
 </html>
