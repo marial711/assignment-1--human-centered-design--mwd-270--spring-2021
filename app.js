@@ -1,27 +1,24 @@
-
-
-
 function updateInput(evt) {
-	let element = evt.target;
-	let value = element.value;
-	let outputId = element.getAttribute("data-output");
-	let output = document.getElementById(outputId);
-	output.value = value;
+    let element = evt.target;
+    let value = element.value;
+    let outputId = element.getAttribute("data-output");
+    let output = document.getElementById(outputId);
+    output.value = value;
 }
 
 function radioInput(){
 
-	for(let i = 0; i < location.length; i++){
-    	if(location[i].checked){
-       		locationAnswer = location[i].value;
-		     let radioOutputId = getElementById("relocateAnswer");
-		  	 let radioOutput = document.getElementById(radioOutputId);
-		  	 radioOutput.value = locationValue;
-    	}
+    for(let i = 0; i < location.length; i++){
+        if(location[i].checked){
+            locationAnswer = location[i].value;
+             let radioOutputId = getElementById("relocateAnswer");
+             let radioOutput = document.getElementById(radioOutputId);
+             radioOutput.value = locationValue;
+        }
   }
-  	let radioOutputId = getElementById("relocateAnswer");
-  	let radioOutput = document.getElementById(radioOutputId);
-  	radioOutput.value = locationValue;
+    let radioOutputId = getElementById("relocateAnswer");
+    let radioOutput = document.getElementById(radioOutputId);
+    radioOutput.value = locationValue;
 }
 
 document.getElementById("firstName").addEventListener("keyup", updateInput);
