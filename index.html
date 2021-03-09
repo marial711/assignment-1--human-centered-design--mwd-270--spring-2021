@@ -13,8 +13,10 @@
     <h1>Registration</h1>
   </header>
   <main>
+    <!-- Input -->
     <div class="inputForm">
-     <form>
+      <h2>Input</h2>
+      <form>
       <p><label for="firstName">Enter your first name </label><input
         required
         autofocus
@@ -24,7 +26,7 @@
         pattern="[A-Za-z]{1,}"
         data-output="firstNameAnswer">
       </p>
-      <p><label for="lastName">Enter your last name </label><input 
+      <p><label for="lastName">Enter your last name </label><input
         required
         type="text"
         name="lastName"
@@ -51,10 +53,10 @@
         id="city"
         pattern="[A-Za-z]{1,}[ ]{0,1}[A-Za-z]{1,}"
         data-output="cityAnswer"></p>
-      <p><label for="state">Select your state </label><input 
-        required 
-        list="states" 
-        name="state" 
+      <p><label for="state">Select your state </label><input
+        required
+        list="states"
+        name="state"
         id="state"
         data-output="stateAnswer">
             <datalist id="states">
@@ -139,32 +141,23 @@
          id="date"
          name="date"
          data-output="dateAnswer"></p>
-      <p>Willing to relocate? <p>
-        <label><input type="radio" name="relocate" value="yes">Both nationally and internationally</label></p>
+        <p>Willing to relocate? <p>
+        <p><label><input type="radio" name="relocate" value="yes">Both nationally and internationally</label></p>
         <p><label><input type="radio" name="relocate" value="nationally">Just nationally</label></p>
         <p><label><input type="radio" name="relocate" value="internationally">Just internationally</label></p>
         <p><label><input type="radio" name="relocate" value="no">No</label></p>
-      </p>
       <input type="submit" value="Submit">
       <input type="reset" name="Reset">
     </form>
     </div>
-    <div>
-    <form>
-      <p><label for="firstNameAnswer">First Name </label><input type="text" name="userFirstName" id="firstNameAnswer" disabled="disabled"></p>
-      </p>
-      <p><label for="lastNameAnswer">Last Name </label><input type="text" name="userLastName" id="lastNameAnswer" disabled="disabled"></p>
-      <p><label for="streetAnswer">Street Address </label><input type="text" name="userStreet" id="streetAnswer" disabled="disabled"></p>
-      <p><label for="apartmentAnswer">Apartment </label><input type="text" name="userApt" id="apartmentAnswer" disabled="disabled"></p>
-      <p><label for="cityAnswer">City </label><input type="text" name="userCity" id="cityAnswer" disabled="disabled"></p>
-      <p><label for="stateAnswer">State </label>/<input type="text" name="userState" id="stateAnswer" disabled="disabled"></p>
-      <p><label for="zipAnswer">Zipcode </label><input type="text" name="userZip" id="zipAnswer" disabled="disabled"></p>
-      <p><label for="salaryAnswer">Desired yearly salary $</label><input type="text" name="userSalary" id="salaryAnswer" disabled="disabled"></p>
-      <p><label for="phoneAnswer">Phone Number </label><input type="text" name="userNumber" id="phoneAnswer" disabled="disabled"></p>
-      <p><label for="dateAnswer">Available Date </label><input type="text" name="userDate" id="dateAnswer" disabled="disabled"></p>
-      <p><label for="relocateAnswer">Willing to relocate? </label><input type="text" name="userLocation" id="relocateAnswer" disabled="disabled"></p>
-    </form>
-  </div>
+    <!-- Output -->
+    <div id="output">
+      <h2>Output</h2>
+      <p id="first-name--response"></p>
+      <p id="last-name--response"></p>
+      <p id="st-address--response"></p>
+      <p id="relocation--response"></p>
+    </div>
   </main>
   <script src="app.js"></script>
 </body>

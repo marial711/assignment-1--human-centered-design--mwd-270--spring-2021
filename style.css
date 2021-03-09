@@ -37,5 +37,19 @@ h1{
 
 .inputForm{
 	text-align: right;
-	margin-right: 33%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputForm,
+#output {
+  border: 1px solid black;
+}
+
+.inputForm,
+#output {
+  width: 49%;
 }
