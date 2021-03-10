@@ -1,64 +1,74 @@
 :root {
-  background: rgb(246,196,218);
-  background: radial-gradient(circle, rgba(246,196,218,1) 0%, rgba(233,212,148,1) 100%);
+  background: rgb(246, 196, 218);
+  background: radial-gradient(circle, rgba(246, 196, 218, 1) 0%, rgba(233, 212, 148, 1) 100%);
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   scroll-behavior: smooth;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
+
 header {
-  padding: 5rem;
+  padding: 3rem;
+  text-align: center;
 }
+
 h1 {
   font-family: 'Krona One', sans-serif;
   color: white;
   font-size: 4rem;
 }
-form{
-  background-color: rgba(255,255,255, .35);
-}
-select {
-  margin-left: 20px;
-  padding: 20px;
-}
-div{
-  padding: 2rem;
+
+form {
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 3rem;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-input{
-  margin-left: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-span {
-  font-size: .75rem;
-  color: grey;
-}
- 
-#relocation {
-  align-items: center;
-  flex-direction: row;
-  color: white;
-}
-label:hover{
-  font-size: 1.1rem;
-  font-weight: bolder;
-}
-
-#finalize {
-  justify-content: center;
-}
-.headings{
-  font-family: 'Krona One', sans-serif;
-  color: white;
-  text-shadow: 2px 2px darkgrey;
-  font-size: 1rem;
-}
-
-.example{
-  align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+input:invalid {
+  background: rgba(167, 233, 214, 0.35);
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.35rem;
+}
+
+select {
+  margin: 0.5rem;
+  padding: 1rem;
+  background: rgba(167, 233, 214, 0.35);
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 2rem;
+}
+
+tr {
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px pink;
+}
+
+#warning {
+  text-align: center;
 }
