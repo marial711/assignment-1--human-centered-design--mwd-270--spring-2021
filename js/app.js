@@ -1,6 +1,6 @@
-window.onload = function () {
+window.onload = () => {
   let input = document.querySelectorAll(`input`);
-  let radio = document.getElementsByName('location');
+  let radio = document.getElementsByName(`location`);
   let select = document.getElementById(`states`);
 
   input[0].addEventListener(`change`, function(event){
@@ -24,7 +24,7 @@ window.onload = function () {
     document.getElementById(`city`).innerHTML = town;
   });
 
-  select.addEventListener('change', (st) => {
+  select.addEventListener(`change`, (st) => {
     document.getElementById(`state`).innerHTML = st.target.value;
 });
 
@@ -51,16 +51,16 @@ window.onload = function () {
           document.getElementById(`relocation-status`).innerHTML = ans;
    }};
   }
-  input[9].addEventListener('change', function(i){
+  input[9].addEventListener(`change`, function(i){
     displayValue();
   });
-  input[10].addEventListener('change', function(i){
+  input[10].addEventListener(`change`, function(i){
     displayValue();
   });
-  input[11].addEventListener('change', function(i){
+  input[11].addEventListener(`change`, function(i){
     displayValue();
   });
-  input[12].addEventListener('change', function(i){
+  input[12].addEventListener(`change`, function(i){
     displayValue();
   });
 }
