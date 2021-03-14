@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin:  auto;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+header > h1 {
+  margin: auto;
+  width: 500px;
+  padding: 50px 0 25px;
+}
+
+p {
+  margin: 10px 10px 0 0;
+}
+
+input[type=text] {
+  width: 500px;
+}
+
+#fullName, #address {
+  display: flex;
+  flex-direction: column;
+}
+
+#address1, #address2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#address1 input[type=text] {
+  width: 241px;
+}
+
+#address2 input[type=text] {
+  width: 155px;
+}
+
+#relocation {
+  padding-bottom: 10px;
+}
+
+#outputButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+report {
+  background-color : blanchedalmond;
+  display: flex;
+  flex-direction: column;
+}
+
+report > div {
+  margin: auto;
+  padding: 10px 0 30px;
+  width: 500px;
+}
