@@ -21,14 +21,6 @@ input:invalid {
   outline: 2px solid red;
 }
 
-p:first-of-type > input {
-  width: var(--basic-char-width);
-}
-
-p:nth-child(2) > input {
-  width: calc(2 * var(--basic-char-width));
-}
-
 h1 {
   letter-spacing: 2px;
   text-align: center;
