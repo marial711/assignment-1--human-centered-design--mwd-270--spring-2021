@@ -1,14 +1,14 @@
 // Inputs
-let firstName = document.getElementById('first-name');
-let lastName = document.getElementById('last-name');
-let street = document.getElementById('street');
-let apartment = document.getElementById('apartment');
-let city = document.getElementById('city');
-let state = document.getElementById('state');
-let zipcode = document.getElementById('zip');
-let salary = document.getElementById('salary');
-let phone = document.getElementById('phone');
-let date = document.getElementById('date');
+let firstName = document.getElementById(`first-name`);
+let lastName = document.getElementById(`last-name`);
+let street = document.getElementById(`street`);
+let apartment = document.getElementById(`apartment`);
+let city = document.getElementById(`city`);
+let state = document.getElementById(`state`);
+let zipcode = document.getElementById(`zip`);
+let salary = document.getElementById(`salary`);
+let phone = document.getElementById(`phone`);
+let date = document.getElementById(`date`);
 let relocate = document.getElementsByName(`relocate`);
 
 // Outputs
