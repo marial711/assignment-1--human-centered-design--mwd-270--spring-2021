@@ -2,6 +2,11 @@
   --basic-char-width: 20px;
 }
 
+body {
+  background-color: #DDD9FF;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 p {
   letter-spacing: 1px;
 }
@@ -22,11 +27,6 @@ p:first-of-type > input {
 
 p:nth-child(2) > input {
   width: calc(2 * var(--basic-char-width));
-}
-
-body {
-  background-color: #DDD9FF;
-  font-family: 'Bebas Neue', sans-serif;
 }
 
 h1 {
