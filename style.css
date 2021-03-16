@@ -1,0 +1,75 @@
+p{
+	letter-spacing: 1px;
+};
+:root {
+  --basic-char-width: 20px;
+}
+
+input {
+  text-align: center;
+  border: 4px solid transparent;
+  margin: 3px;
+  border: 2px solid black;
+}
+
+
+input:invalid {
+  outline: 2px solid red;
+}
+
+p:first-of-type > input {
+  width: var(--basic-char-width);
+}
+
+p:nth-child(2) > input {
+  width: calc(2 * var(--basic-char-width));
+}
+
+body{
+	background-color: #DDD9FF;
+	font-family: 'Bebas Neue';
+}
+
+h1{
+	letter-spacing: 2px;
+	text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.inputForm{
+	text-align: left;
+  margin-right: 5px;
+
+
+}
+
+.output{
+  margin-left: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputForm,
+#output {
+  border: 2px dashed black;
+  padding: 10px;
+  width: 49%;
+  
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #e4ffdb;
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Bebas Neue';
+  font-size: 16px;
+}
