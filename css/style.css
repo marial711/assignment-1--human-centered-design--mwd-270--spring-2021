@@ -7,6 +7,20 @@ body {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+h1 {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
 p {
   letter-spacing: 1px;
 }
@@ -21,36 +35,6 @@ input:invalid {
   outline: 2px solid red;
 }
 
-h1 {
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-.inputForm {
-  text-align: left;
-  margin-right: 5px;
-}
-
-.output {
-  margin-left: 5px;
-}
-
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
-.inputForm,
-#output {
-  border: 2px dashed black;
-  padding: 10px;
-  width: 49%;
-}
-
 input[type='submit'],
 input[type='reset'] {
   background-color: #e4ffdb;
@@ -62,4 +46,20 @@ input[type='reset'] {
   display: inline-block;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 16px;
+}
+
+.output {
+  margin-left: 5px;
+}
+
+.inputForm {
+  text-align: left;
+  margin-right: 5px;
+}
+
+.inputForm,
+#output {
+  border: 2px dashed black;
+  padding: 10px;
+  width: 49%;
 }
