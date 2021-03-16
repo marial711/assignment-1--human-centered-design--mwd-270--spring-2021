@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assingment #1: Form Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <h1>Registration Form!</h1>
+      <p>Navigate your way through this form using your TAB key. Enjoy!</p>
+  </header>
+  <br>
+  <main>
+    <form action="index.html" method="post" onsubmit="js/app.js">
+      <label for="fname">Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+      <br>
+      <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Street" required>
+        <input type="text" name="apt" id="apt" placeholder="Apt/Unit">
+        <input type="text" name="city" id="town" placeholder="City/Town" required>
+        <select id="states">
+          <option value=" ">State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colordo</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshiere</option>
+          <option value="NJ">New Jeresy</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virgina</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+        <input type="number" name="zipcode" id="zip" placeholder="Zipcode" required>
+        <br>
+      <label for="des-salary">Salary</label>
+        <input type="number" name="des-salary" id="des-salary" placeholder="Formatted as: 45000" required>
+        <br>
+      <label for="phone-number">Phone Number</label>
+        <input type="tel" name="phone-number" id="phone-number" placeholder="Formatted as: 000-111-2233" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14" required>
+        <br>
+      <label for="starting-date">Starting Date</label>
+        <input type="date" id="starting-date" name="starting-date" required>
+        <br>
+      <div>
+      <p>Are you able to relocate?</p>
+      <input type="radio" id="international" name="location" value="Can relocate internationally" required>
+        <label for="international">International</label>
+      <input type="radio" id="national" name="location" value="Can relocate nationally" required>
+        <label for="national">National</label>
+      <input type="radio" id="both" name="location" value="Both, International and National" required>
+        <label for="both">Both</label>
+      <input type="radio" id="niether" name="location" value="Neither" required>
+        <label for="niether">Neither</label>
+      </div>
+      <br>
+      <p id="warning">Check your response below, before submitting to ensure everything is correct!</p>
+      <table id="results">
+          <tr>
+            <th>Name :</th>
+            <td><span id="final-fname"></span> <span id="final-lname"></span></td>
+          </tr>
+          <tr>
+            <th>Location :</th>
+            <td><span id="street"></span> <span id="unit"></span> <span id="city"></span> <span id="state"></span> <span id="code"></span></td>
+          </tr>
+          <tr>
+            <th>Desired Salary :</th>
+            <td id="final-salary"></td>
+          </tr>
+          <tr>
+            <th>Phone Number :</th>
+            <td id="contactnumber"></td>
+          </tr>
+          <tr>
+            <th>Starting Date <br><small>(YYYY–MM–DD) :</small></th>
+            <td id="date"></td>
+          </tr>
+          <tr>
+            <th>Relocation Status :</th>
+            <td id="relocation-status"></td>
+          </tr>
+        </table>
+      <br>
+      <input type="submit" name="submit" id = "submit">
+      <input type="reset" name="reset">
+    </form>
+  </main>
+  <script src="js/app.js"></script>
+  </body>
+</html>
