@@ -3,6 +3,9 @@ window.onload = () => {
   let radio = document.getElementsByName(`location`);
   let select = document.getElementById(`states`);
 
+// default relocation status
+document.getElementById(`relocation-status`).innerHTML = "Not able to relocate";
+
   input[0].addEventListener(`change`, function(event){
       let firstName = document.getElementById(`fname`).value;
       document.getElementById(`final-fname`).innerHTML = firstName;
@@ -32,11 +35,11 @@ window.onload = () => {
     let zipcode = document.getElementById(`zip`).value;
     document.getElementById(`code`).innerHTML = zipcode;
   });
-  input[6].addEventListener(`change`, function(money){
+  input[7].addEventListener(`change`, function(money){
     let salary = document.getElementById(`des-salary`).value;
-    document.getElementById(`final-salary`).innerHTML =  `$ ${salary}`;
+    document.getElementById(`final-salary`).innerHTML =  `$` + salary;
   });
-  input[7].addEventListener(`change`, function(phone){
+  input[6].addEventListener(`change`, function(phone){
     let phonenumber = document.getElementById(`phone-number`).value;
     document.getElementById(`contactnumber`).innerHTML = phonenumber;
   });
@@ -49,7 +52,7 @@ window.onload = () => {
         if(radio[i].checked){
           let ans = radio[i].value;
           document.getElementById(`relocation-status`).innerHTML = ans;
-   }};
+        }}
   }
   input[9].addEventListener(`change`, function(i){
     displayValue();
@@ -60,7 +63,18 @@ window.onload = () => {
   input[11].addEventListener(`change`, function(i){
     displayValue();
   });
-  input[12].addEventListener(`change`, function(i){
-    displayValue();
+
+  input[13].addEventListener(`click`, function(i){
+    document.getElementById(`final-fname`).innerHTML = '';
+    document.getElementById(`final-lname`).innerHTML = '';
+    document.getElementById(`street`).innerHTML = '';
+    document.getElementById(`unit`).innerHTML = '';
+    document.getElementById(`city`).innerHTML = '';
+    document.getElementById(`state`).innerHTML = '';
+    document.getElementById(`code`).innerHTML = '';
+    document.getElementById(`contactnumber`).innerHTML = '';
+    document.getElementById(`final-salary`).innerHTML = '';
+    document.getElementById(`date`).innerHTML = '';
+    document.getElementById(`relocation-status`).innerHTML = "Not able to relocate";
   });
 }
